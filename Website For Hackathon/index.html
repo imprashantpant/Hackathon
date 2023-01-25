@@ -11,7 +11,7 @@
             <ul id='brandLogo'>
                 <li><a href="#" style='font-size: 25px; padding-left: 35px'> AiDoc </a></li>
                 <li style='float: right'><a href="#"> Home </a></li>
-                <li style='float: right'><a href="#"> Services </a></li>
+                <li style='float: right'><a href="#second-section"> Services </a></li>
                 <li style='float: right'> <a href="#"> Blog </a></li>
             </ul>
 
@@ -22,14 +22,16 @@
             <div class='first_image'>
                 <img src='ai-image.png'>
             </div>
-            <div>
-                <h2> Welcome To AiDOC</h2>
-                <p> Revolutionizing healthcare with cutting-edge image recognition technology</p>
+            <div class="text">
+                <h2>
+                    Welcome To <span> AiDOC</span>
+                </h2>
+                <p> Revolutionizing healthcare with image recognition technology</p>
             </div>
         </section>
 
 
-        <!-- Pallavi Here is the Section You Will be Interested in  -->
+        <!-- This is second Section  -->
         <section id='second-section'>
             <div class='heading'>
                 <h2> Our Services</h2>
@@ -38,50 +40,153 @@
 
             <div class='card1 card'>
                 <div class='brain'>
-                </div>
 
-                <!-- This Submission si for Brain -->
-                <div class='submission-form'>
-                    <form action="/action_page.php">
-                        <label for="brain">Select image:</label>
-                        <input type="file" id="brain" name="brain" accept="image/*">
-                        <input type="submit">
-                    </form>
                 </div>
+                <a href="#section-form">
+                    <h2> Diagnose Brain Cancer</h2>
+                </a>
+
+
+                <!-- This Card is for Brain -->
+
 
 
             </div>
-            <!-- This submission is for Tuberculosis -->
+            <!-- This Card is for Tuberculosis -->
             <div class='card2 card'>
                 <div class='tuberculosis'>
+
+
                 </div>
-                <div class='submission-form'>
-                    <form action="/action_page.php">
-                        <label for="tuberculosis">Select image:</label>
-                        <input type="file" id="tuberculosis" name="tuberculosis" accept="image/*">
-                        <input type="submit">
-                    </form>
-                </div>
+                <a href="#section-form">
+                    <h2> Diagnose Tuberculosis</h2>
+                </a>
+
 
 
             </div>
-            <!-- Thus Submission is for Cancer -->
+            <!-- Thus Card is for Cancer -->
             <div class='card3 card'>
                 <div class='cancer'>
+
+
                 </div>
-                <div class='submission-form'>
-                    <form action="/action_page.php">
-                        <label for="cancer">Select image:</label>
-                        <input type="file" id="cancer" name="cancer" accept="image/*">
-                        <input type="submit">
-                    </form>
-                </div>
+                <a href="#section-form">
+                    <h2> Diagnose Cancer</h2>
+                </a>
+
 
 
             </div>
 
         </section>
-        <!-- Your Business Finishes here. I will add other things with time -->
+
+        <!-- This is the Section that Requires Backend -->
+        <h2 id="section-form">Fill Up</h2>
+        <section id="submission-section">
+
+
+
+            <div id="submit-illness">
+                <div>
+
+                    <h2> Three Steps Solution </h2>
+                    <ul>
+                        <li> 1. Choose a Problem to Be Diagnosed </li>
+                        <li> 2. Upload the Relevant Image </li>
+                        <li> 3. Submit </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div id='submission-form'>
+
+
+                <form action="/action_page.php" id="uploadFile">
+                    <div id='first'>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" value="John">
+                    </div>
+
+                    <div id='second'>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" value="Doe">
+                    </div>
+
+                    <div id='third'>
+                        <label for="number">Phone Number:</label>
+                        <input type="tel" id="number" name="number" value="Doe">
+                    </div>
+                    <div id='fourth'>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" value="Doe">
+                    </div>
+                    <div id='fifth'>
+                        <label for="illness">Choose Illness :</label>
+
+                        <select name="illness" id="illness" required>
+                            <option value="Tuberculosis">Tuberculosis</option>
+                            <option value="Cancer">Cancer</option>
+                            <option value="Brain">Brain</option>
+                        </select>
+                    </div>
+
+                    <div id='sixth'>
+                        <input type="file" id="myFile" name="filename" required>
+                    </div>
+                    <div id='seventh'>
+                        <input id='submit' type="submit" value="Submit">
+
+                    </div>
+
+
+                </form>
+                <!-- ee6d4a -->
+
+
+            </div>
+
+
+
+        </section>
+
+
+        <section id='about-us'>
+            <h2> About Us</h2>
+            <div class='description'>
+                We use Various Technologies to get the job done.
+            </div>
+
+        </section>
+
+
+        <footer id='footer'>
+
+            <div id='contact-us'>
+                <ul>
+                    <h2>Contact Us</h2>
+
+                    <li> Number: 9860103809 </li>
+                    <li> Email: aidoc@gmail.com</li>
+                </ul>
+            </div>
+
+            <div id="read-blogs">
+                <ul>
+                    <h2> Read Our Blogs</h2>
+
+                    <li> <a href='#'>On Image Recognitions</a></li>
+                    <li><a href='#'>Success Stories</a></li>
+                </ul>
+
+
+
+            </div>
+
+
+
+        </footer>
     </body>
 
 </html>
