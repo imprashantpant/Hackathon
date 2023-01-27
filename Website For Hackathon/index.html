@@ -3,7 +3,7 @@
 
     <head>
         <title>AiDoc</title>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
 
     <body>
@@ -20,11 +20,11 @@
 
         <section id="upper-part">
             <div class='first_image'>
-                <img src='ai-image.png'>
+                <img src='../images/ai-image.png'>
             </div>
             <div class="text">
                 <h2>
-                    Welcome To <span> AiDOC</span>
+                    Welcome To <br><span> AiDOC</span>
                 </h2>
                 <p> Revolutionizing healthcare with image recognition technology</p>
             </div>
@@ -43,7 +43,7 @@
 
                 </div>
                 <a href="#section-form">
-                    <h2> Diagnose Brain Cancer</h2>
+                    <h2> Diagnose Brain Tumor</h2>
                 </a>
 
 
@@ -72,11 +72,8 @@
 
                 </div>
                 <a href="#section-form">
-                    <h2> Diagnose Cancer</h2>
+                    <h2> Diagnose Pneumonia</h2>
                 </a>
-
-
-
             </div>
 
         </section>
@@ -106,29 +103,31 @@
                 <form action="/action_page.php" id="uploadFile">
                     <div id='first'>
                         <label for="fname">First name:</label>
-                        <input type="text" id="fname" name="fname" value="John">
+                        <input type="text" id="fname" name="fname" value="">
                     </div>
 
                     <div id='second'>
                         <label for="lname">Last name:</label>
-                        <input type="text" id="lname" name="lname" value="Doe">
+                        <input type="text" id="lname" name="lname" value="">
                     </div>
 
                     <div id='third'>
                         <label for="number">Phone Number:</label>
-                        <input type="tel" id="number" name="number" value="Doe">
+                        <input type="tel" id="number" name="number" value="">
                     </div>
                     <div id='fourth'>
                         <label for="address">Address:</label>
-                        <input type="text" id="address" name="address" value="Doe">
+                        <input type="text" id="address" name="address" value="">
                     </div>
                     <div id='fifth'>
                         <label for="illness">Choose Illness :</label>
 
                         <select name="illness" id="illness" required>
                             <option value="Tuberculosis">Tuberculosis</option>
-                            <option value="Cancer">Cancer</option>
-                            <option value="Brain">Brain</option>
+                            <!-- Value was Cancer, now it is Pneumonia -->
+                            <option value="pneumonia">Pneumonia</option>
+
+                            <option value="Brain">Brain tumor</option>
                         </select>
                     </div>
 
